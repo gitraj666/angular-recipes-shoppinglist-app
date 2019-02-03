@@ -13,14 +13,14 @@
 <div class="row">
   <div class="col-xs-12">
     <div class="btn-group" appDropdown>
-      <button type="button" class="btn btn-primary dropdown-toggle">
+      <button type="button" class="btn btn-primary dropdown-toggle" routerLink="new">
         Manage Recipe
         <span class="caret"></span>
       </button>
       <ul class="dropdown-menu">
-        <li><a href="#" (click)="addToShoppingList()">To shopping list</a></li>
-        <li><a href="#">Edit Recipe</a></li>
-        <li><a href="#">Delete Recipe</a></li>
+        <li><a style="cursor:pointer;" (click)="addToShoppingList()">To shopping list</a></li>
+        <li><a style="cursor:pointer;" routerLink="edit">Edit Recipe</a></li>
+        <li><a style="cursor:pointer;">Delete Recipe</a></li>
       </ul>
     </div>
   </div>

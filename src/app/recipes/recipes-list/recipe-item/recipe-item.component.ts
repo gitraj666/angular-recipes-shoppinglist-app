@@ -10,10 +10,11 @@ import { RecipeService } from '../../recipe-list.service';
 export class RecipeItemComponent implements OnInit {
 
   @Input() recipe: Recipe;
+  @Input() index: number; 
+
   constructor(private recipeService: RecipeService) { }
 
-  ngOnInit() {
-    
+  ngOnInit() { 
   }
 
   onSelected() {
